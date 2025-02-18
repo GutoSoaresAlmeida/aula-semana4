@@ -9,7 +9,7 @@ export class UsuarioController {
   constructor(private readonly usuarioService: UsuarioService) {}
 
   @Post()
-  async criar(@Body() dadosUsuario: CriaUsuarioDTO) { // Usando DTO corretamente
+  async criar(@Body() dadosUsuario: CriaUsuarioDTO) { 
     return this.usuarioService.criar(dadosUsuario);
   }
 

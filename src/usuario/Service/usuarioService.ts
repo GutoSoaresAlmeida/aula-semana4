@@ -10,11 +10,11 @@ export class UsuarioService {
 
 
   async criar(dadosUsuario: CriaUsuarioDTO): Promise<UsuarioEntity> {
-    // Criando a instância da entidade
+   
     const usuario = new UsuarioEntity();
     
     // Gerando o ID automaticamente
-    usuario.id = randomUUID();  // Gerando um ID único
+    usuario.id = randomUUID();  
     usuario.nome = dadosUsuario.nome;
     usuario.email = dadosUsuario.email;
     usuario.senha = dadosUsuario.senha;
